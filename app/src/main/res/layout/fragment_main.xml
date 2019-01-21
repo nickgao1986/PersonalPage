@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<nickgao.com.viewpagerswitchexample.view.ScrollableLayout
+    android:id="@+id/news_home_scroll_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include  android:id="@+id/rlHeader"
+              layout="@layout/fragment_personal_head"></include>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_news_home_sliding_tab"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/rlHeader"
+        android:background="@color/white_a">
+
+        <nickgao.com.viewpagerswitchexample.view.HomeSlidingTabLayout
+            android:id="@+id/news_home_sliding_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_a"
+            app:HomeCountPerScreen="5.4"
+            app:HomeSlidingTabIndicatorColor="@color/red_b"
+            app:HomeSlidingTabStyle="HomeTypeCust"
+            app:HomeSlidingTabTextColor="@color/black_at"
+            app:HomeSlidingTabTextSelectColor="@color/red_b"
+            app:HomeSlidingTabTextSelectSize="@dimen/text_size_19"
+            app:HomeSlidingTabTextSize="@dimen/text_size_17"/>
+
+        <View
+            style="@style/divider"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+    <nickgao.com.viewpagerswitchexample.view.NewsHomeViewPager
+        android:id="@+id/news_home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@+id/rl_news_home_sliding_tab"/>
+
+
+
+</nickgao.com.viewpagerswitchexample.view.ScrollableLayout>
+
+<include layout="@layout/layout_fragment_personal_title"
+    />
+</FrameLayout>
+

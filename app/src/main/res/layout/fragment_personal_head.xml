@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/personal_header_with_one_line_personal_info_height"
+                android:background="@drawable/personal_fragment_header_background"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivPersonalBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageView
+            android:id="@+id/mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/personal_fragment_header_pic_mask"
+            android:visibility="gone"
+            />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/personal_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_header_with_one_line_personal_info_height">
+
+
+        <RelativeLayout
+            android:id="@+id/personal_header_without_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_header_with_one_line_personal_info_height"
+            >
+
+            <include
+                android:id="@+id/ll_header_layout"
+                layout="@layout/personal_header_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/personal_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@+id/personal_header_without_info_layout"
+            android:maxLines="2"
+            android:paddingBottom="9.5dp"
+            android:paddingLeft="@dimen/personal_header_info_margin_left_right"
+            android:paddingRight="@dimen/personal_header_info_margin_left_right"
+            android:paddingTop="9.5dp"
+            android:text="即刻是一个服务云平台,无缝连接需求与服务,简单、快捷、可依赖。从现在开始使用即刻APP,百种服务一键对接,无需搜求、无需垂询、无需预约"
+            android:textColor="@color/black_at"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            >
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

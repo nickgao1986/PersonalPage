@@ -1,0 +1,36 @@
+{
+  "id": 129746620,
+  "avatars": "http:\/\/sc.seeyouyima.com\/avatar_129746620",
+  "reason": "",
+  "isask": 0,
+  "screen_name": "niceol",
+  "follows": 29,
+  "isfake": 1,
+  "status_code": 0,
+  "user_type": 0,
+  "fans": 24,
+  "forum_admin": false,
+  "tabs": [{
+    "type": -1,
+    "name": "动态",
+    "url": ""
+  }, {
+    "type": 7,
+    "name": "话题",
+    "url": ""
+  }, {
+    "type": 8,
+    "name": "回复",
+    "url": ""
+  }, {
+    "type": 9,
+    "name": "资料",
+    "url": ""
+  }],
+  "news_switch": false,
+  "news_url": "",
+  "isvip": 0,
+  "banner": "http:\/\/sc.seeyouyima.com\/android-dynamicBanner-129746620-1493947221310_972_972.jpg",
+  "userrank": 15,
+  "actdays": 171
+}

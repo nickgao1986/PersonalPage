@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_new_home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/news_home_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="true"
+        android:listSelector="@color/trans_color"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+
+</RelativeLayout>

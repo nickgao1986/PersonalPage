@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="HomeSlidingTabLayout">
+        <attr name="HomeSlidingTabTextSize" format="dimension"/>
+        <attr name="HomeSlidingTabTextSelectSize" format="dimension"/>
+        <attr name="HomeSlidingTabTextColor" format="reference|color"/>
+        <attr name="HomeSlidingTabTextSelectColor" format="reference|color"/>
+        <attr name="HomeSlidingTabTextBackground" format="reference"/>
+        <attr name="HomeSlidingTabIndicatorColor" format="reference|color"/>
+        <attr name="HomeSlidingTabIndicatorHight" format="dimension"/>
+        <attr name="HomeSlidingTabDividerColor" format="reference|color"/>
+        <attr name="HomeSlidingTabStyle">
+            <enum name="HomeTypeDefault" value="0"/>
+            <enum name="HomeTypeAlignCenter" value="1"/>
+            <enum name="HomeTypeAverage" value="2"/>
+            <enum name="HomeTypeCust" value="3"/>
+        </attr>
+        <attr name="HomeCountPerScreen" format="float"/>
+    </declare-styleable>
+
+    <style name="fragment_personal_head_sub_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white_a</item>
+    </style>
+
+    <style name="divider">
+        <item name="android:background">@drawable/apk_all_lineone</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+</resources>

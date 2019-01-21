@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/personal_titlebar_height"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_custom_title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/personal_titlebar_height"
+            android:background="@color/red_b"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/custom_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white_a"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/baselayout_vg_general"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/personal_titlebar_height"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/custom_iv_left"
+                android:layout_width="50dp"
+                android:layout_height="@dimen/personal_titlebar_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/apk_all_topback"/>
+
+            <Button
+                android:id="@+id/btn_personal_title_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_toLeftOf="@+id/custom_iv_right"
+                android:background="@drawable/personal_attention_btn_for_titlebar_selector"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@drawable/personal_attention_word_for_titlebar_selector"
+                android:textSize="@dimen/text_size_14"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_publish_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_m"
+                android:layout_toLeftOf="@+id/custom_iv_right"
+                android:text="发动态"
+                android:textColor="@color/white_a"
+                android:textSize="@dimen/text_size_xm"
+                />
+
+            <ImageView
+                android:id="@+id/custom_iv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/personal_titlebar_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_m"
+                android:gravity="center"
+                android:src="@drawable/btn_more_selector"
+                android:textColor="@color/white_a"
+                android:textSize="@dimen/text_size_s"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

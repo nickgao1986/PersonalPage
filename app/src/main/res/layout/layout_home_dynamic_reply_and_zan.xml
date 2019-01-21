@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="@dimen/space_xs"
+                android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/llZanReply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tata_icon_commentthick"
+            android:drawablePadding="@dimen/space_xxs"
+            android:gravity="center"
+            android:padding="1dip"
+            android:text="回复"
+            android:textColor="@color/black_c"
+            android:textSize="@dimen/text_size_xs"/>
+
+        <ImageView
+            android:id="@+id/zanDivider"
+            android:layout_width="1px"
+            android:layout_height="@dimen/space_m"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            />
+
+        <!-- 点赞-->
+        <nickgao.com.viewpagerswitchexample.view.PraiseButton
+            android:id="@+id/btn_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <!--android:background="@drawable/apk_all_white_selector"-->
+    </LinearLayout>
+</RelativeLayout>
