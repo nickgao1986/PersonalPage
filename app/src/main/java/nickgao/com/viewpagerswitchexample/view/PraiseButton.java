@@ -105,7 +105,7 @@ public class PraiseButton extends RelativeLayout {
                         startFailedAnimation(mIsPraised);
                     }
                 }
-            }
+             }
         });
     }
 

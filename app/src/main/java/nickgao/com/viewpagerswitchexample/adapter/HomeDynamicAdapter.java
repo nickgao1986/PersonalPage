@@ -205,6 +205,13 @@ public class HomeDynamicAdapter extends BaseAdapter {
                 viewHolder.tvNickname = (TextView) view.findViewById(R.id.tvNickname);
 
                 viewHolder.btn_praise = (PraiseButton) view.findViewById(R.id.btn_praise);
+                viewHolder.btn_praise.setOnPraiseButtonListener(new PraiseButton.OnPraiseButtonClickListener() {
+                    @Override
+                    public boolean onClick(boolean isPraised) {
+                        models.get(position).isPraise = 1;
+                        return true;
+                    }
+                });
 
 //                viewHolder.llZan = (LinearLayout) view.findViewById(R.id.llZan);
 //                viewHolder.ivZan = (ImageView) view.findViewById(R.id.ivZanImage);
